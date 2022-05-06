@@ -9,49 +9,29 @@
 </head>
 
 <body>
-    
-    <div id="encriptador">
-        <img src="imagenes/logo.svg" id="logo">
-
+    <main>
+        <header id="encriptador">
+            <img src="imagenes/logo.svg" id="logo">
+        </header>
         <section class="caja-texto">
-            
-           
-            <textarea id="textoACopiar" rows="10" cols="50" placeholder="Ingrese el texto aquí" class="caja" style="display: inline;" onkeyup="this.value=this.value.toLowerCase()"></textarea>
-            
+            <textarea id="textoACopiar" rows="10" cols="50" placeholder="Ingrese el texto aquí" class="caja" style="display: inline;" onkeyup="this.value=this.value.toLowerCase()"></textarea>  
             <img src="imagenes/Muñeco.svg" id="muñeco" style="display: inline;">
-            
             <img src="imagenes/Rectangle1.svg" id="rectangulo1" style="display: inline;">
-            
             <textarea id="textArea" class="texto-mostrar" style=" display:none;"></textarea>
-            
-            <label id="nota2" style="visibility: visible;">Ningún mensaje fue encontrado</label>
-            
-                
-         
-            
+            <label id="nota2" style="visibility: visible;">Ningún mensaje fue encontrado</label>   
             <label id="texto2" rows="10" cols="50" class="texto-inferior" style="visibility: visible;">Ingrese el texto que desees encriptar o desencriptar</label>
-            
-            
-
-
-
-
         </section>
-        
-        <p id="nota">📢 Solo letras minúsculas y sin acentos</p>
-    </div>
-    <section>
-        <button id="encriptar" class="boton" onclick="encriptar()">Encriptar</button>
-        <button id="desencriptar" class="boton" onclick="desencriptar()">Desencriptar</button>
-        <button id="btnCopiar" class="boton" onclick="copiarAlPortapapeles()" style=" visibility: hidden;">Copiar</button>
-    </section>
-    
-
-    <script src="js/desafio.js"></script>
+            <p id="nota">📢 Solo letras minúsculas y sin acentos</p>
+        <section>
+            <button id="encriptar" class="boton" onclick="encriptar()">Encriptar</button>
+            <button id="desencriptar" class="boton" onclick="desencriptar()">Desencriptar</button>
+            <button id="btnCopiar" class="boton" onclick="copiarAlPortapapeles()" style=" visibility: hidden;">Copiar</button>
+        </section>
+        <script src="js/desafio.js"></script>
+    </main>
 </body>
 
 <footer id="pie-pagina">
     Creado por: Edwin Camacho 😎🤙
-
 </footer>
 </html>
