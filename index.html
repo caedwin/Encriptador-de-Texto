@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-
-
+    <title>Encriptador de texto</title>
 </head>
 
+<body>
+    
+    <div id="encriptador">
+        <img src="imagenes/logo.svg" id="logo">
+
+        <section class="caja-texto">
+            
+           
+            <textarea id="textoACopiar" rows="10" cols="50" placeholder="Ingrese el texto aquí" class="caja" style="display: inline;" onkeyup="this.value=this.value.toLowerCase()"></textarea>
+            
+            <img src="imagenes/Muñeco.svg" id="muñeco" style="display: inline;">
+            
+            <img src="imagenes/Rectangle1.svg" id="rectangulo1" style="display: inline;">
+            
+            <textarea id="textArea" class="texto-mostrar" style=" display:none;"></textarea>
+            
+            <label id="nota2" style="visibility: visible;">Ningún mensaje fue encontrado</label>
+            
+                
+         
+            
+            <label id="texto2" rows="10" cols="50" class="texto-inferior" style="visibility: visible;">Ingrese el texto que desees encriptar o desencriptar</label>
+            
+            
 
 
-<body class = "cuerpo">
-    <h1>Encriptador de Texto</h1>
-    <textarea id="cuerpo-mensaje" clase ="longitud-texto" cols="40" rows="5"></textarea>
-    <p>Caracteres: <span id="numero-caracteres"></span> caracteres.</p>
+
+
+        </section>
+        
+        <p id="nota">📢 Solo letras minúsculas y sin acentos</p>
+    </div>
+    <section>
+        <button id="encriptar" class="boton" onclick="encriptar()">Encriptar</button>
+        <button id="desencriptar" class="boton" onclick="desencriptar()">Desencriptar</button>
+        <button id="btnCopiar" class="boton" onclick="copiarAlPortapapeles()" style=" visibility: hidden;">Copiar</button>
+    </section>
     
-    
-    
-    
-    
-    
-    
-    
-    <script src="js/contador.js"></script>
+
+    <script src="js/desafio.js"></script>
 </body>
 
+<footer id="pie-pagina">
+    Creado por: Edwin Camacho 😎🤙
 
-
-
+</footer>
 </html>

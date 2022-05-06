@@ -1,2 +1,120 @@
-.cuerpo{
-    background:  red;
+/*Color fondo de página*/
+body,#logo,.caja-texto,.caja{
+    background: #F3F5FC;  
+}
+/* Posicionamiento logo */
+#logo{
+    position: absolute;
+    margin: 2em 0 0 4em;   
+}
+/*Caja para emcriptar/desencritar mensajes*/
+.caja{ 
+    font-size: 18px;
+    border: none;
+    resize: none; 
+    background: transparent; 
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    margin: 5em 0 0 8em;
+}
+/*Propiedades imagen Rectángulo*/
+#rectangulo1{
+    z-index: 1;
+    position:absolute;
+    margin: 0 auto;
+    width: 25%;
+    height: 75%;
+    margin: 1em 0 0 53em;
+    background: #ffffff;
+    border-radius: 1em; 
+}
+/*Propiedades de la imagen*/
+#muñeco{
+    z-index: 2;
+    position: absolute;
+    margin: 3em 0 0 55em;
+    display: inline-table;
+    float:inline-start;
+    background: #ffffff;
+    width: 20%;
+}
+
+/* propiedades texto rectángulo central */
+#nota2{
+    z-index: 3;
+    width: 220px;
+    margin: 17em 0 0 45.5em;
+    position: absolute;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: double;  
+}
+/*texto inferior del rectángulo*/
+.texto-inferior{
+    z-index: 4;
+    position: absolute;
+    border: 1pc;
+    margin: 28em 0 0 58em;
+    resize: none;
+    width: 20em;
+    height: 4em;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;  
+}
+/*Propiedades texto desencriptado*/
+.texto-mostrar{
+    position: absolute;
+    z-index: 5;
+    background: rgb(255, 255, 255);
+    resize: none;
+    margin: 2em 0 0 48em;
+    width: 17em;
+    height: 24.6em;
+    border: none;
+    text-align: justify;
+    font-size: 18px;   
+}
+/*Propiedades texto debajo de la caja para encriptar mensajes*/
+#nota{
+    position: absolute;
+    font-size: 0.9em;
+    margin: 30em 0 0 12em;
+}
+/*Porpieades de los Botones*/ 
+.boton{
+    width: 18%;
+    padding: 10px 5px;
+    border-radius: 2em;
+    background-color: #0A3871;
+    color: #ffffff;
+    border-style:double;
+    margin: 39em 0em 0 10em;  
+    transition: 400ms;  
+}
+/*Propiedades formato de los botones desencriptar y copiar  */
+#btnCopiar, #desencriptar{
+    background-color: transparent;
+    color: #0A3871;
+    border-color: #0A3871;
+    font-weight: bold;
+}
+/*Propiedades Animacion de los botones*/
+.boton:hover, #btnCopiar:hover, #desencriptar:hover{
+    background-color: lightblue;
+}
+/*Propiedades pie de página*/ 
+#pie-pagina{
+    margin: 2em 0 0 5em;
+    font-style: oblique; 
+}
+
+
+
+
+
+
+
